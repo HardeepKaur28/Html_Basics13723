@@ -1,0 +1,100 @@
+/* h1 {
+    color: red;
+}
+
+h2 {
+    color: green;
+}
+Selectors: */
+
+
+/* 
+a.) Element Selector - Selects element based on the name  */
+
+h1 {
+    color: red;
+}
+
+
+/* 2.id selector : Selects the element based on the id.  */
+
+#one {
+    color: violet;
+}
+
+
+/* 3.class selector :Selects the elements based on the class name */
+
+.mypara {
+    color: brown;
+}
+
+
+/* 4.Attribute selector
+elementname[attributename condition] */
+
+
+/* I want to find the <a> whose href starts with https:// */
+
+
+/* ^= -> Starts with
+$= -> Ends with
+*= -> contains */
+
+a[href^="https:"] {
+    color: violet;
+}
+
+a[href$=".jpg"] {
+    color: maroon;
+}
+
+a[href*="/"] {
+    color: red;
+}
+
+img[src^="../"] {
+    border: 10px solid gray;
+}
+
+
+/* 5.) Pseudo Selectors */
+
+
+/* elementName: pseudoProperty { ... } */
+
+ol:first-child {
+    color: red;
+}
+
+li:first-child {
+    color: green;
+}
+
+.ordered-list-item:last-child {
+    color: red;
+}
+
+.unordered-list-item:first-child {
+    color: blue;
+}
+
+.ordered-list-item:nth-child(3) {
+    color: yellow;
+}
+
+
+/* //gradients */
+
+#container-one {
+    width: 678px;
+    height: 400px;
+    background: linear-gradient(to right, white, red, orange, green, black);
+    /* its destination direction , 0% bottom,90left,180top 270right) */
+}
+
+#star {
+    width: 200px;
+    height: 300px;
+    background: linear-gradient(90deg, green, yellow, orange, red, violet, pink, black);
+}

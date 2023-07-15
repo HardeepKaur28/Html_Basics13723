@@ -2,6 +2,13 @@
 <html>
 
 <head>
+    <!-- Internal css : 
+    <style>
+        h2 {
+            color: red;
+        }
+    </style> -->
+    <link rel="stylesheet" href="./styles.css">
     <title>HTML Basics</title>
 </head>
 
@@ -9,8 +16,10 @@
     <!-- PLAIN TEXT :- this is a sample text . This is a change.Another change
     This is a new line plain text. -->
     <!-- Html5 Block Level Elements -->
-    <!-- Heading Elements (h1-h6) -> textsize(h1)->textsize(h6) -->
-    <h1>Introduction to HTML</h1>
+    <!-- Heading Element (h1-h6) -> textsize(h1)->textsize(h6) -->
+    <h1 style="color: palevioletred;">Introduction to HTML</h1>
+    <h2>Hii Hardeep</h2>
+    <h4 id="one">hlo</h4>
     <!-- <h1>Heading - 1</h1>
     <h2>Heading - 2</h2>
     <h3>Heading - 3</h3>
@@ -18,28 +27,35 @@
     <h5>Heading - 5</h5>
     <h6>Heading - 6</h6> -->
     <!-- Paragraph -->
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt libero molestias, voluptatum cum soluta architecto praesentium fuga temporibus autem ea, natus, distinctio dolore saepe quis nisi est! Sunt, omnis porro.</p>
+    <p style="color: blue;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt libero molestias, voluptatum cum soluta architecto praesentium fuga temporibus autem ea, natus, distinctio dolore saepe quis nisi est! Sunt, omnis porro.</p>
 
     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum ad <b>fugit nam aliquid</b> tempore dolores aspernatur possimus. Aliquam ipsa laudantium ea. <br /> Ducimus, nam nesciunt. <i>Distinctio suscipit</i> optio consectetur officiis dolor
         placeat hic! Nobis expedita, eveniet <span style="background-color:pink">veniam voluptatibus amet</span>, cumque corporis illum enim ipsa dolores et architecto fugit sequi deserunt consectetur quasi optio ducimus voluptatum excepturi, quo quis?
-        Dignissimos, vel blanditiis?</p>
-    <p>Lorem, ipsum dolor sit amet <u>consectetur adipisicing elit</u>. Repellat nobis ratione iusto unde minus porro impedit architecto adipisci amet facilis quasi, molestias quam maxime ad!</p>
+        Dig99nissimos, vel blanditiis?</p>
+    <p class="mypara">Lorem, ipsum dolor sit amet <u>consectetur adipisicing elit</u>. Repellat nobis ratione iusto unde minus porro impedit architecto adipisci amet facilis quasi, molestias quam maxime ad!</p>
+    <p class="mypara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nihil quisquam incidunt, aperiam dolorum expedita. Molestias nam obcaecati, inventore quidem perspiciatis, perferendis consequatur in cupiditate similique, sunt delectus dolor assumenda.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores error, inventore officia totam magni odio voluptatem qui. Modi, iure. Debitis iure sit deserunt? Porro officiis delectus provident beatae! Consequuntur odio, commodi tenetur nisi libero
+        similique aliquid! Sapiente reiciendis voluptates sed dolorum itaque amet ab delectus.</p>
+    <p class="mypara">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo, recusandae quia, nihil optio laboriosam dicta quo voluptatibus hic corporis quisquam, quidem veritatis omnis soluta perferendis a ipsa aperiam fuga consequatur.68</p>
     <h3>Lists - </h3>
     <!-- Ordered List (ol) -->
+    <h4>ordered List</h4>
     <ol type="A">
-        <li>Item-1</li>
-        <li>Item-2</li>
-        <li>Item-3</li>
-        <li>Item-4</li>
-        <li>Item-5</li>
+        <li class="ordered-list-item">Item-1</li>
+        <li class="ordered-list-item">Item-2</li>
+        <li class="ordered-list-item">Item-3</li>
+        <li class="ordered-list-item">Item-4</li>
+        <li class="ordered-list-item">Item-5</li>
     </ol>
+
     <!-- Unordered List(ul) -->
+    <h4>unordered list</h4>
     <ul>
-        <li>Item-1</li>
-        <li>Item-2</li>
-        <li>Item-3</li>
-        <li>Item-4</li>
-        <li>Item-5</li>3
+        <li class="unordered-list-item">Item-1</li>
+        <li class="unordered-list-item">Item-2</li>
+        <li class="unordered-list-item">Item-3</li>
+        <li class="unordered-list-item">Item-4</li>
+        <li class="unordered-list-item">Item-5</li>
     </ul>
 
     <h3>Anchors - </h3>
@@ -49,16 +65,26 @@
         3. Root Relative Link
      -->
     <p>Click <a href="https://www.google.com">here</a>to go to google</p>
-    <p>click <a href="./html/assets/pictures/images.jpg">here</a> to see the image</p>
+    <p>click <a href="./assets/images.jpg">here</a> to see the image</p>
     <p>click <a href="./second.html">here</a> to visit to page 2</p>
 
     <hr />
+
+    <h3>Gradents</h3>
+    <div id="container-one">
+
+    </div>
+    <hr />
+    <div id="star">
+
+    </div>
+
 
     <!-- Self Ending Elements -->
     <h3>Images</h3>
     <img src="https://static.remove.bg/sample-gallery/graphics/bird-thumbnail.jpg" alt="Image One" />
     <hr />
-    <img src="./html/assets/pictures/images.jpg" alt="Image-2">
+    <img src="../html/assets/images.jpg" alt="Image-2">
 
     <hr>
     <!-- Date 14/7/23 -->
@@ -132,21 +158,15 @@
         </div>
     </form>
     <hr />
+    <h3>Html5 Multimedia</h3><br />
+    <h4>Video</h4>
+    <video src="./assets/videos/myvideo.mp4" controls></video>
+    <hr>
 
-    <h3>Html5 Multimedia</h3>
-    <h4>Video :</h4>
-    <video src="./html/assets/videos/myvideos.mp4" controls></video>
-    <h3>Audio : </h3>
-    <!-- <audio src="./" controls></audio>  -->
-    <audio src="./html/assets/audio/myaudio.mp4" controls></audio>
-    <hr />
-    <h3>You Tube video</h3>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/2rcKpY-4QBI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    <hr />
+    <h3>google map</h3>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3427.771390511219!2d76.6167623747819!3d30.78099508329998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ffa9485c539a5%3A0x7e32a159650281bc!2sRayat-Bahra%20University!5e0!3m2!1sen!2sin!4v1689437336841!5m2!1sen!2sin"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-    <h3>Google Map</h3>
-    <iframe src=" https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3427.771390511219!2d76.6167623747819!3d30.78099508329998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ffa9485c539a5%3A0x7e32a159650281bc!2sRayat-Bahra%20University!5e0!3m2!1sen!2sin!4v1689399637172!5m2!1sen!2sin
-        " width="600 " height="450 " style="border:0; " allowfullscreen=" " loading="lazy " referrerpolicy="no-referrer-when-downgrade "></iframe>"></iframe>
 </body>
 
 </html>
