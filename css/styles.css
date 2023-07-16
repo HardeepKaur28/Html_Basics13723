@@ -18,12 +18,17 @@ h1 {
 
 /* 2.id selector : Selects the element based on the id.  */
 
-#one {
+#one :hover {
     color: violet;
 }
 
 
 /* 3.class selector :Selects the elements based on the class name */
+
+
+/* #para-one, #para-two, #para-four {
+    color: gray;
+}--> avoid this by using class selector */
 
 .mypara {
     color: brown;
@@ -81,6 +86,14 @@ li:first-child {
 
 .ordered-list-item:nth-child(3) {
     color: yellow;
+}
+
+
+/* Colors: 1.by name ,2.hex code , 3.rgb value : -> color picker*/
+
+#me {
+    color: rgb(219, 72, 9);
+    background: #0aabf0;
 }
 
 
