@@ -89,7 +89,7 @@ li:first-child {
 }
 
 
-/* Colors: 1.by name ,2.hex code , 3.rgb value : -> color picker*/
+/* Colors: 1.by name ,2.hex code , 3.rgb() , 4. : -> color picker*/
 
 #me {
     color: rgb(219, 72, 9);
@@ -97,7 +97,7 @@ li:first-child {
 }
 
 
-/* //gradients */
+/* //gradients : !,Linear Gradient , 2.Radial Gradient */
 
 #container-one {
     width: 678px;
@@ -110,4 +110,27 @@ li:first-child {
     width: 200px;
     height: 300px;
     background: linear-gradient(90deg, green, yellow, orange, red, violet, pink, black);
+}
+
+
+/* Date:17/7/23 */
+
+
+/* Unit of Measurements */
+
+
+/* 1.Absolute unit:a value :px,cm,mm,in..., 2.Relative unit:(em) 
+
+*/
+
+p {
+    /* font-size: 18px; */
+    /* font-size: 2em; */
+    font-size: 1.2em
+    /* font-size: 5cm; */
+}
+
+img {
+    width: 50%;
+    height: 750px;
 }
