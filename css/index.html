@@ -17,12 +17,13 @@
     This is a new line plain text. -->
     <!-- Html5 Block Level Elements -->
     <!-- Heading Element (h1-h6) -> textsize(h1)->textsize(h6) -->
-    <h1 style="color: palevioletred;">Introduction to HTML</h1>
+    <h1 style="color: #461076">Introduction to HTML</h1>
+    <hr />
+    <h1 id="heading-one">Html : Hyper-text-Markup-Language</h1>
     <hr />
     <h2 id="me">Hii Hardeep Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt nam provident totam cumque vel porro soluta quibusdam eum unde minima, expedita voluptates odio corporis enim consectetur, omnis illum laboriosam doloremque? Rem quos itaque
         voluptatem ex provident cumque minus, dolorum laudantium tenetur. Velit nesciunt, exercitationem ducimus, quod reprehenderit obcaecati vel odit quas possimus dolorum, excepturi ipsam hic!</h2>
     <hr />
-    <h4 id="one">hlo</h4>
     <!-- <h1>Heading - 1</h1>
     <h2>Heading - 2</h2>
     <h3>Heading - 3</h3>
@@ -79,14 +80,16 @@
 
     <hr />
 
-    <h3>Gradents</h3>
-    <div id="container-one">
-
-    </div>
+    <h3 style="color : blueviolet">Gradents</h3>
     <hr />
-    <div id="star">
+    <h3>Linear Gradents</h3>
+    <div id="container-one"></div>
+    <hr />
+    <div id="star"></div>
+    <hr />
+    <h3>2.Radial Gradent</h3>
+    <div id="container-three"></div>
 
-    </div>
 
     <hr />
     <!-- Self Ending Elements -->
@@ -96,6 +99,7 @@
     <img src="../html/assets/pictures/images.jpg" alt="Image-2">
 
     <hr />
+    <div id="container-two"> </div>
     <!-- Date 14/7/23 -->
     <h3>Tables - </h3>
     <table border="2">
@@ -137,32 +141,41 @@
     <form action="https://mybed.php">
         <!-- <span>Your Name :</span><input type="" /> -->
         <!-- Note :default type is text inside the type / not use datetime -->
-        <div><input type="text" placeholder="Enter your name..." /></div>
-        <div><input type="email" placeholder="Enter your email" /></div>
-        <div><input type="password" placeholder="Enter your password" /></div>
-        <div><input type="date" /></div>
-        <div><input type="range" /></div>
-        <div><label>Enter your gender -</label></div>
+        <div class="form-item"><input id="form-name" type="text" placeholder="Enter your name..." /></div>
+        <div class="form-item"><input id="form-email" type="email" placeholder="Enter your email" /></div>
+        <div class="form-item"><input id="form-password" type="password" placeholder="Enter your password" /></div>
+        <div class="form-item">
+            <label>Date Of Birth
+                <input type="date" />
+            </label>
+        </div>
+        <div class="form-item">
+            <label> How well do you feel ?
+                 <input type="range" />
+             </label>
+        </div>
+        <div class="form-item"><label>Enter your gender -</label></div>
         <!-- <input type="checkbox" />Male<br />
-        <input type="checkbox" />Female<br />
-        <input type="checkbox" />others<br /> -->
-        <div> <select>
-            <option>Male</option>
-            <option>Female</option>
-            <option>others</option>
-        </select>
+            <input type="checkbox" />Female<br />
+            <input type="checkbox" />others<br /> -->
+        <div class="form-item">
+            <select>
+                <option>Male</option>
+                <option>Female</option>
+                <div>
+                <option>others</option>
+                </div>
+              </select>
         </div>
-        <div>
-            <label>Upload Your CV</label>
-            <input type="file" />
-        </div>
-        <div>
+        <label>Upload Your CV</label>
+        <input type="file" />
+        <div class="form-item">
             <input type="color" />
         </div>
-        <div>
+        <div class="form-item">
             <button onclick="alert('Btn was clicked!')">Click Me !</button>
         </div>
-        <div>
+        <div class="form-item">
             <input type="submit" value="Sign Up" />
         </div>
     </form>

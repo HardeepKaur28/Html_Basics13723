@@ -1,25 +1,25 @@
-/* h1 {
-    color: red;
+@import url('https://fonts.googleapis.com/css2?family=Lumanosimo&display=swap');
+body {
+    background: linear-gradient(to bottom, rgba(241, 38, 255, 0.6), rgba(100, 158, 245, 0.5));
+    font-family: 'Lumanosimo', cursive;
+    font-size: 0.9em;
+    text-align: center;
 }
 
-h2 {
-    color: green;
-}
-Selectors: */
 
-
-/* 
+/*
+Selectors: 
 a.) Element Selector - Selects element based on the name  */
 
 h1 {
-    color: red;
+    color: rgb(221, 255, 0);
 }
 
 
 /* 2.id selector : Selects the element based on the id.  */
 
-#one :hover {
-    color: violet;
+#heading-one:hover {
+    color: rgb(203, 86, 13);
 }
 
 
@@ -31,7 +31,7 @@ h1 {
 }--> avoid this by using class selector */
 
 .mypara {
-    color: brown;
+    color: rgb(5, 109, 17);
 }
 
 
@@ -89,19 +89,21 @@ li:first-child {
 }
 
 
-/* Colors: 1.by name ,2.hex code , 3.rgb() , 4. : -> color picker*/
+/* Colors: -> color picker
+1. Named Colors     2. HEX Code     3. RBG() -> rgb(red, green, blue)   4. RGBA() -> rgb(red, green, blue, absolute) -> abs [0-1]; 
+*/
 
 #me {
-    color: rgb(219, 72, 9);
-    background: #0aabf0;
+    color: rgb(21, 3, 77);
+    background: #bb1b06;
 }
 
 
 /* //gradients : !,Linear Gradient , 2.Radial Gradient */
 
 #container-one {
-    width: 678px;
-    height: 400px;
+    width: 308px;
+    height: 300px;
     background: linear-gradient(to right, white, red, orange, green, black);
     /* its destination direction , 0% bottom,90left,180top 270right) */
 }
@@ -110,6 +112,27 @@ li:first-child {
     width: 200px;
     height: 300px;
     background: linear-gradient(90deg, green, yellow, orange, red, violet, pink, black);
+}
+
+
+/* NOTE :- If no direction is provided, default is top to bottom | Directions :- bottom, top, left, right */
+
+
+/* background: linear-gradient(direction, black, red, blue, green, yellow, white); */
+
+
+/* background: linear-gradient(to left, black, red, blue, green, yellow, white); */
+
+
+/* NOTE :- You can specify the directions usinh deg values (0deg) starts from bottom, reaches to top */
+
+
+/* background: linear-gradient(360deg, black, red, blue, green, yellow, white); */
+
+#container-three {
+    width: 400px;
+    height: 300px;
+    background: radial-gradient(circle, black 10%, red 20%, blue 25%, green 30%, yellow 80%, white 90%);
 }
 
 
@@ -132,5 +155,57 @@ p {
 
 img {
     width: 50%;
-    height: 750px;
+    height: 500px;
 }
+
+
+/* Box Model : */
+
+#form-name,
+#form-email,
+#form-password {
+    width: 100%;
+}
+
+.form-item {
+    margin: 8px;
+}
+
+form {
+    /* border: widthofborder style color */
+    /* style : 1.solid 2.dotted 3.dashed 4.double */
+    border: 4px solid gray;
+    /* 
+    padding: a-px;
+    padding: a-px b-px; a -> top-bottom | b -> left-right
+    padding: a-px b-px c-px d-px; a -> top | b -> right | c -> bottom | d -> left 
+    */
+    padding: 10px;
+    padding: 10px 5px;
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding: 5px 10px 15px 20px;
+    margin: 10px;
+    margin: 10px 5px;
+    margin: 5px 10px 15px 20px;
+    /* NOTE:- padding & margin are both parent properties -> they also have sub-properties associated with them. */
+    /* padding-left:; padding-right:; padding-top:; padding-bottom:; margin-top:; margin-bottom:; margin-left:; margin-right:; */
+}
+
+#container-two {
+    width: 55%;
+    height: 350px;
+    /* NOTE:- background is a parent property */
+    /* background: red; */
+    background-image: url(../html/assets/pictures/download.jpg);
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    /* background-size: 100%; background-size: auto; background-size: cover; */
+    background-size: cover;
+    border: 4px solid brown;
+}
+
+
+/* Fonts and Font-Family */
