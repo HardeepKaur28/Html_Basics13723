@@ -10,6 +10,11 @@
     <!-- 1.Download Bootstrap
     2.Installing Bs (using npm)
     3.Using Bootstrap CDN -->
+    <h1>Heading</h1>
+    <div class="container-fluid">Heading</div>
+    <div class="container">Heading</div>
+    <hr />
+
     <div class="container-fluid">
         <h1 class="page-header">Welcome to Bootstrap</h1>
     </div>
@@ -31,7 +36,7 @@
     <hr />
     <h3>Contextual-Class</h3>
     <p class="text-primary">Contextual-Class-Primary</p>
-    <p class="text-success">Contextual-Class-Success</p>
+    <p style="color: blueviolet;" class="text-success">Contextual-Class-Success</p>
     <p class="text-info">Contextual-Class-info</p>
     <p class="text-warning">Contextual-Class-Warning</p>
     <p class="text-muted">Contextual-Class-Muted</p>
@@ -43,7 +48,167 @@
     <p class="bg-info">Contextual-Class-info</p>
     <p class="bg-warning">Contextual-Class-Warning</p>
     <p class="bg-danger">Contextual-Class_Danger</p>
-    <!-- <p class="bg-muted">Contextual-ClassMuted-</p> : no muted background color -->
+    <!-- NOT POSSIBLE :- <p class="bg-muted">Contextual Class - Muted</p> -->
+
+    <hr />
+
+    <h1>Buttons /Submit & Anchor</h1>
+    <button class="btn btn-primary">Button</button>
+    <input class="btn btn-success" type="submit" value="submit">
+    <a class="btn btn-danger" href="#">Anchor</a>
+    <hr />
+    <h4>Button-Sizes</h4>
+    <button class="btn-primary btn-lg">button-1</button>
+    <button class="btn-success btn-sm">button-2</button>
+    <button class="btn-danger btn-xs">button-3</button>
+    <hr />
+    <table class="table table-bordered table-condensed table-hover">
+        <!-- Row1 -->
+        <tr>
+            <!-- <td><b>Emp_Id</b></td> -->
+            <th>Emp_ID</th>
+            <th>Emp_Name</th>
+            <th>Emp Email</th>
+            <th>Emp Designation</th>
+        </tr>
+
+        <!-- Row2 -->
+        <tr>
+            <td>01231</td>
+            <td>Pardeep</td>
+            <td>pardeep@gmail.com</td>
+            <td>student</td>
+        </tr>
+        <!-- Row3 -->
+        <tr>
+            <td>01232</td>
+            <td>Rubi</td>
+            <td>rubi@gmail.com</td>
+            <td>developer</td>
+        </tr>
+        <!-- Row4 -->
+        <tr>
+            <td>01233</td>
+            <td>Jashan</td>
+            <td>jashan@gmail.com</td>
+            <td>junior developer</td>
+        </tr>
+    </table>
+    <hr />
+
+    <div class="container-fluid">
+        <h1>Forms:</h1>
+    </div>
+    <div class="container">
+        <form style="border: 6px double black; padding: 10px;">
+            <!-- <span>Your Name :</span><input type="" /> -->
+            <!-- Note :default type is text inside the type / not use datetime -->
+            <div class="form-group"><input class="form-control" type="email" placeholder="Enter your email" /></div>
+            <div class="form-group"><input class="form-control" type="password" placeholder="Enter your password" /></div>
+            <div class="form-group"><input class="form-control" type="text" placeholder="Enter your name..." /></div>
+            <div class="form-group"><input class="form-control" type="date" /></div>
+            <div class="form-group"><input class="form-control" type="range" /></div>
+            <div class="form-group"><label>Enter your gender -</label></div>
+            <!-- <input type="checkbox" />Male<br />
+        <input type="checkbox" />Female<br />
+        <input type="checkbox" />others<br /> -->
+            <div class="form-group"> <select>
+            <option>Male</option>
+            <option>Female</option>
+            <option>others</option>
+        </select>
+            </div>
+            <div class="form-group">
+                <label>Upload Your CV</label>
+            </div>
+            <input class="form-control" type="file" />
+            <div class="form-group">
+            </div>
+            <div class="form-group">
+                <input class="btn btn-danger btn-lg" type="submit" value="Sign Up" />
+            </div>
+        </form>
+    </div>
+    <hr />
+
+    <div class="container-fluid">
+        <h1>Navigation-Bar</h1>
+    </div>
+    <div class="container">
+        <ul style="display: flex; justify-content:space-around;" class="list-unstyled list-inline">
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">SKILLS</a></li>
+            <li><a href="#">EDCATION</a></li>
+            <li><a href="#">WORK</a></li>
+        </ul>
+
+        <ol class="list-unstyled">
+            <li>Item-1</li>
+            <li>Item-2</li>
+            <li>Item-3</li>
+            <li>Item-4</li>
+            <li>Item-5</li>
+        </ol>
+
+    </div>
+    <hr />
+    <div class="container-fluid">Panels :</div>
+    <div class="container">
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <h1 style="text-align: center;">Heading-one</h1>
+            </div>
+
+            <div class="panel-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima delectus reprehenderit iste saepe eveniet illo, quo ad eaque quam incidunt rerum ab doloremque eligendi reiciendis iure dolores id exercitationem aspernatur?23 Lorem ipsum dolor
+                sit amet consectetur adipisicing elit. Debitis at in rem, iste nesciunt voluptates sunt. Soluta assumenda repudiandae doloremque voluptatem quia quos, tenetur, facilis fuga, possimus quam quis est.</div>
+
+        </div>
+    </div>
+
+    <hr />
+    <div class="container-fluid">
+        <h3>BS Grids :-</h3>
+    </div>
+    <div class="container">
+        <!-- Row -->
+        <div class="row">
+            <!-- One row can have at max of 12 cols -->
+            <div class="col-lg-4">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h4 style="text-align: center;">Panel-1</h4>
+                    </div>
+                    <div class="panel-body">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, cum repellendus ullam blanditiis ut corporis, a est mollitia omnis molestias officia doloremque veritatis aspernatur neque, doloribus porro consequatur facere
+                            quasi explicabo. Debitis error ipsum accusantium, in quod animi placeat itaque, ab assumenda voluptatem fugit veritatis distinctio praesentium porro quas numquam.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="panel panel-success">
+                    <div class="panel-heading">
+                        <h4 style="text-align: center;">Panel-2</h4>
+                    </div>
+                    <div class="panel-body">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, cum repellendus ullam blanditiis ut corporis, a est mollitia omnis molestias officia doloremque veritatis aspernatur neque, doloribus porro consequatur facere
+                            quasi explicabo. Debitis error ipsum accusantium, in quod animi placeat itaque, ab assumenda voluptatem fugit veritatis distinctio praesentium porro quas numquam.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="panel panel-danger">
+                    <div class="panel-heading">
+                        <h4 style="text-align: center;">Panel-3</h4>
+                    </div>
+                    <div class="panel-body">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, cum repellendus ullam blanditiis ut corporis, a est mollitia omnis molestias officia doloremque veritatis aspernatur neque, doloribus porro consequatur facere
+                            quasi explicabo. Debitis error ipsum accusantium, in quod animi placeat itaque, ab assumenda voluptatem fugit veritatis distinctio praesentium porro quas numquam.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 </body>
