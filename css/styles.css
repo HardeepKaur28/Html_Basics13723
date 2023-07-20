@@ -9,18 +9,26 @@ body {
 
 /*
 Selectors: 
+ selector { cssProperty: cssValue; } 
 a.) Element Selector - Selects element based on the name  */
 
-h1 {
+h2 {
     color: rgb(221, 255, 0);
+    text-align: center;
+    font-size: 3em;
+    /* text-shadow: hor -x. vert -y. ,  ,color; */
+    text-shadow: 10px 10px 4px black, -10px -10px 4px white;
 }
 
 
 /* 2.id selector : Selects the element based on the id.  */
 
+
+/*
 #heading-one:hover {
-    color: rgb(203, 86, 13);
+     color: rgb(203, 86, 13); 
 }
+*/
 
 
 /* 3.class selector :Selects the elements based on the class name */
@@ -45,6 +53,10 @@ elementname[attributename condition] */
 /* ^= -> Starts with
 $= -> Ends with
 *= -> contains */
+
+a {
+    text-decoration: none;
+}
 
 a[href^="https:"] {
     color: violet;
@@ -209,3 +221,44 @@ form {
 
 
 /* Fonts and Font-Family */
+
+
+/*CSS Flex-Box */
+
+#container {
+    display: flex;
+    /* flex-direction: row(default),column , row-reverse ,column-reverse; */
+    flex-wrap: wrap;
+    /* defult(nowrap)*/
+    /* justify-content: flex-start ,flex-end ,center,space-between ,space-evently ,space-around; */
+    justify-content: space-around;
+    /*start */
+}
+
+.container-item {
+    width: 100px;
+    height: 100px;
+    font-size: 6em;
+    text-align: center;
+    background: black;
+    color: white;
+    border: 4px double red;
+    padding: 10px;
+    margin: 15px;
+}
+
+#container-para {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.container-para-item {
+    width: 300px;
+    height: 300px;
+    border: 3px double rgb(26, 0, 105);
+    background-color: rgb(251, 82, 215);
+    margin: 10px;
+}
