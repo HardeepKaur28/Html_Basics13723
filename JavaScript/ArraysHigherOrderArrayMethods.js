@@ -37,7 +37,10 @@ console.log(empNames)
 //  find the id of empls. with desgn. is IT and served min of 6years
 // const empId = employees.filter(employee => (employee.end - employee.start <= 6) && employee.designation == "IT").map((index) => console.log(index.id))
 
-//4. sort() 
+const empIDs = employees.filter(emp => emp.designation == 'IT' || emp.designation == 'HR' && emp.end - emp.start >= 6).map(emp => emp.id).sort((a, b) => b - a)
+console.log(empIDs)
+    //4. sort() 
+
 //a-b = asending order
 //b-a = descnding order
 console.log(ages)
