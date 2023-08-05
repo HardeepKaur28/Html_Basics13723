@@ -1,7 +1,7 @@
 // //AJAX:Asynchronous javascript and XML
 // //AJAX:- a technique to integrate an API to a FE 
 // //ajax-->is a side effect-->which takes time to a FE application
-// //xml->helps to contact ot server
+// //xml->helps to contact to server
 
 // // Step1 - Create an object at XMLHttpRequest()
 // const xhr = new XMLHttpRequest()
@@ -31,7 +31,7 @@
 
 
 // Aysynchronous JavaScript And XML
-// AJAX :- A technique to integrate an API to a FE application
+// AJAX :- A technique to integrate an API to a Front End application
 
 // Step1 - Create an object of XMLHttpRequest()
 const xhr = new XMLHttpRequest();
@@ -50,7 +50,7 @@ xhr.onreadystatechange = () => {
         // I will get the response from the server -> responseText
         const jsonRes = xhr.responseText
         const res = JSON.parse(jsonRes)
-            //  console.log(res)
+        console.log(res)
 
         // const userImg = document.createElement('img')
         // userImg.setAttribute('src', res[0].avatar_url)

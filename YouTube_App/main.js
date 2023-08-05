@@ -12,14 +12,17 @@ document.getElementById('search-btn').addEventListener('click', () => {
             let output = ''
             for (let i = 0; i < response.items.length; i++) {
                 output += `
+                <div style="width: 23%; margin: 10px;">
                     <a href="https://www.youtube.com/watch?v=${response.items[i].id.videoId}" target="_blank">
-                        <div style="width: 23%; margin: 10px;">
+                        <div>
                             <img style="width:100%" src="${response.items[i].snippet.thumbnails.high.url}" />
                             <h4>${response.items[i].snippet.title}</h4>
                             <p>${response.items[i].snippet.description}</p>
                         </div>
                     </a>
-                `
+                    </div>
+                 `
+
             }
             document.getElementById('my-div').innerHTML = output
         }
